@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harishankar Bhat Ramachandra — Software Engineer with 7+ years of experience in Backend Systems, Microservices, and AI Tools. Based in Ireland." />
+  <meta name="author" content="Harishankar Bhat Ramachandra" />
+  <meta name="keywords" content="Software Engineer, Backend, Microservices, AI, Java, Python, Spring Boot, Ireland" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Harishankar Bhat Ramachandra | Software Engineer" />
+  <meta property="og:description" content="Software Engineer with 7+ years of experience in Backend Systems, Microservices, and AI Tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile_picture.jpg" />
+
+  <title>Harishankar Bhat Ramachandra | Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">HBR<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li role="listitem"><a href="#about">About</a></li>
+        <li role="listitem"><a href="#experience">Experience</a></li>
+        <li role="listitem"><a href="#skills">Skills</a></li>
+        <li role="listitem"><a href="#certifications">Certifications</a></li>
+        <li role="listitem"><a href="#education">Education</a></li>
+        <li role="listitem"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour theme" type="button">
+        <i class="fas fa-sun" id="theme-icon" aria-hidden="true"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links" type="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Harishankar<br>Bhat Ramachandra</h1>
+        <h2 class="hero-role" aria-live="polite">
+          <span class="typed-text" id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="hero-location">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <span>Ireland</span>
+        </p>
+        <p class="hero-summary">
+          Software Engineer with 7+ years of experience building scalable backend systems,
+          microservices, and AI-powered tools. Passionate about clean architecture and
+          intelligent automation.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Get in Touch
+          </a>
+          <a href="#experience" class="btn btn-outline">
+            <i class="fas fa-briefcase" aria-hidden="true"></i> View Experience
+          </a>
+        </div>
+        <div class="hero-socials" role="list" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/Harishankar97" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" role="listitem">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" role="listitem">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://harishankar97.medium.com/" target="_blank" rel="noopener noreferrer" aria-label="Medium blog" role="listitem">
+            <i class="fab fa-medium" aria-hidden="true"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/17200622/harishankar-bhat-ramachandra" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile" role="listitem">
+            <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.credly.com/users/harishankar97/badges" target="_blank" rel="noopener noreferrer" aria-label="Credly badges" role="listitem">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-ring"></div>
+          <img
+            src="profile_picture.jpg"
+            alt="Harishankar Bhat Ramachandra"
+            class="hero-photo"
+            width="320"
+            height="320"
+            loading="eager"
+          />
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 class="section-title" id="about-heading">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Software Engineer with over 7 years of experience designing and delivering
+              robust backend systems, RESTful APIs, and microservice architectures. Currently
+              based in <strong>Ireland</strong>, I work at <strong>Ericsson</strong> where I
+              develop rApps on Ericsson's EIC (Ericsson Intelligent Controller) Platform.
+            </p>
+            <p>
+              My recent focus has expanded into the AI space — building AI agents, integrating
+              LLMs into production workflows, and applying prompt engineering techniques to
+              solve real engineering problems. I'm particularly excited about tools like
+              <strong>Kiro IDE</strong> and <strong>Kiro CLI</strong> and the broader ecosystem
+              of AI-assisted development.
+            </p>
+            <p>
+              Outside of work I build projects and contribute to my GitHub repository, write on
+              Medium, and continuously grow through trainings, certifications, and hands-on
+              experimentation.
+            </p>
+            <div class="about-stats" role="list" aria-label="Career statistics">
+              <div class="stat" role="listitem">
+                <span class="stat-number" aria-label="7 plus years">7+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Companies</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-highlights">
+            <article class="highlight-card">
+              <i class="fas fa-server" aria-hidden="true"></i>
+              <h3>Backend Engineering</h3>
+              <p>Spring Boot, REST APIs, Microservices, JPA/Hibernate, Spring Security, FastAPI</p>
+            </article>
+            <article class="highlight-card">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+              <h3>AI &amp; Agents</h3>
+              <p>LLM Integrations, AI Agent Development, Prompt Engineering, Kiro IDE, Kiro CLI, Amazon Q</p>
+            </article>
+            <article class="highlight-card">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <h3>Infrastructure</h3>
+              <p>Docker, Kubernetes, Jenkins, GitHub CI/CD</p>
+            </article>
+            <article class="highlight-card">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <h3>Data &amp; Storage</h3>
+              <p>Oracle SQL, PostgreSQL, Redis — design, optimisation, and integration</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-title-row">
+          <h2 class="section-title" id="experience-heading">Work <span>Experience</span></h2>
+          <p class="experience-total" id="experience-total" aria-live="polite"></p>
+        </div>
+        <ol class="timeline" aria-label="Work history">
+
+          <li class="timeline-item" data-aos>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-content">
+              <header class="timeline-header">
+                <div>
+                  <h3 class="job-title">Software Engineer</h3>
+                  <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Ericsson &mdash; Ireland</p>
+                </div>
+                <time class="timeline-date" datetime="2024-07">Jul 2024 – Present</time>
+              </header>
+              <p class="team-name">Ericsson Intelligent Automation Platform (EIAP)</p>
+              <ul class="job-tags" aria-label="Technologies used">
+                <li>Java</li><li>Python</li><li>FastAPI</li><li>Spring Boot</li>
+                <li>Microservices</li><li>Docker</li><li>Kubernetes</li>
+                <li>Prompt Engineering</li><li>Kiro IDE</li><li>Kiro CLI</li><li>LLM Integrations</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-aos>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-content">
+              <header class="timeline-header">
+                <div>
+                  <h3 class="job-title">Senior Software Engineer</h3>
+                  <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Epsilon &mdash; India</p>
+                </div>
+                <time class="timeline-date" datetime="2023-08">Aug 2023 – Jul 2024</time>
+              </header>
+              <p class="team-name">Product Engineering — Connect Platform</p>
+              <ul class="job-tags" aria-label="Technologies used">
+                <li>Java</li><li>Spring Boot</li><li>REST APIs</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-aos>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-content">
+              <header class="timeline-header">
+                <div>
+                  <h3 class="job-title">Software Engineer II</h3>
+                  <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Philips &mdash; India</p>
+                </div>
+                <time class="timeline-date" datetime="2021-01">Jan 2021 – Aug 2023</time>
+              </header>
+              <p class="team-name">HealthSuite Platform (HSP)</p>
+              <ul class="job-tags" aria-label="Technologies used">
+                <li>Java</li><li>Spring Boot</li><li>JPA / Hibernate</li><li>Spring Security</li><li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item" data-aos>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-content">
+              <header class="timeline-header">
+                <div>
+                  <h3 class="job-title">Infosys &mdash; India</h3>
+                </div>
+                <time class="timeline-date" datetime="2018-08">Aug 2018 – Jan 2021</time>
+              </header>
+              <div class="sub-roles">
+
+                <div class="sub-role">
+                  <div class="sub-role-header">
+                    <span class="sub-role-title">Senior Systems Engineer</span>
+                    <time class="timeline-date" datetime="2020-10">Oct 2020 – Jan 2021</time>
+                  </div>
+                  <p class="team-name">Verizon Enterprise Payments Systems (Verizon)</p>
+                  <ul class="job-tags" aria-label="Technologies used">
+                    <li>Java</li><li>Spring Boot</li><li>Microservices</li><li>Docker</li><li>Kubernetes</li><li>Oracle SQL</li>
+                  </ul>
+                </div>
+
+                <div class="sub-role">
+                  <div class="sub-role-header">
+                    <span class="sub-role-title">Systems Engineer</span>
+                    <time class="timeline-date" datetime="2019-01">Jan 2019 – Sep 2020</time>
+                  </div>
+                  <p class="team-name">Enterprise Payments Systems (AT&amp;T) &bull; Verizon Enterprise Payments Systems (Verizon)</p>
+                  <ul class="job-tags" aria-label="Technologies used">
+                    <li>Java</li><li>Spring Boot</li><li>Microservices</li><li>Docker</li><li>Kubernetes</li><li>Oracle SQL</li>
+                  </ul>
+                </div>
+
+                <div class="sub-role">
+                  <div class="sub-role-header">
+                    <span class="sub-role-title">Systems Engineer Trainee</span>
+                    <time class="timeline-date" datetime="2018-08">Aug 2018 – Dec 2018</time>
+                  </div>
+                  <ul class="job-tags" aria-label="Technologies used">
+                    <li>Java</li><li>Spring</li><li>Hibernate</li><li>Training</li>
+                  </ul>
+                </div>
+
+              </div>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section-title" id="skills-heading">Tech <span>Stack</span></h2>
+        <div class="skills-grid">
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <h3>Languages</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Programming languages">
+              <li class="skill-tag">Java</li>
+              <li class="skill-tag">Python</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-layer-group" aria-hidden="true"></i>
+              <h3>Backend &amp; Frameworks</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Backend frameworks">
+              <li class="skill-tag">Spring Boot</li>
+              <li class="skill-tag">REST APIs</li>
+              <li class="skill-tag">Microservices</li>
+              <li class="skill-tag">JPA / Hibernate</li>
+              <li class="skill-tag">Spring Security</li>
+              <li class="skill-tag">Flask</li>
+              <li class="skill-tag">FastAPI</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+              <h3>AI &amp; Tooling</h3>
+            </div>
+            <ul class="skill-tags" aria-label="AI tools and technologies">
+              <li class="skill-tag">Prompt Engineering</li>
+              <li class="skill-tag">AI Agent Development</li>
+              <li class="skill-tag">LLM Integrations</li>
+              <li class="skill-tag">Kiro IDE</li>
+              <li class="skill-tag">Kiro CLI</li>
+              <li class="skill-tag">Amazon Q</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <h3>Infrastructure &amp; DevOps</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Infrastructure tools">
+              <li class="skill-tag">Docker</li>
+              <li class="skill-tag">Kubernetes</li>
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">GitHub</li>
+              <li class="skill-tag">Jenkins</li>
+              <li class="skill-tag">Spinnaker</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Databases">
+              <li class="skill-tag">Oracle SQL</li>
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">Redis</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+              <h3>Messaging</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Messaging systems">
+              <li class="skill-tag">RabbitMQ</li>
+              <li class="skill-tag">Apache Kafka</li>
+            </ul>
+          </article>
+
+          <article class="skill-category" data-aos>
+            <div class="skill-category-header">
+              <i class="fas fa-vial" aria-hidden="true"></i>
+              <h3>Unit Testing</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Testing tools">
+              <li class="skill-tag">JUnit</li>
+              <li class="skill-tag">Mockito</li>
+              <li class="skill-tag">Pytest</li>
+              <li class="skill-tag">Postman</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section class="section section-alt" id="certifications" aria-labelledby="cert-heading">
+      <div class="container">
+        <h2 class="section-title" id="cert-heading">Certifi<span>cations</span></h2>
+        <div class="cert-grid">
+
+          <a href="https://www.credly.com/badges/eb4caf25-74e0-472e-973a-36a9d8884628/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
+             aria-label="Generative AI Driver's License certification on Credly">
+            <div class="cert-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+            <div class="cert-info">
+              <h3>Generative AI Driver's License</h3>
+              <div class="cert-badge active" role="status">Active</div>
+              <p class="cert-issuer">Credly</p>
+              <p class="cert-date">
+                <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                Issued Feb 2026 &bull; Expires Feb 2029
+              </p>
+            </div>
+            <i class="fas fa-external-link-alt cert-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.credly.com/badges/e6a75f1a-951b-45c1-adcd-6429e0c344c3/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
+             aria-label="Prompt Engineering Fundamental Level certification on Credly">
+            <div class="cert-icon"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+            <div class="cert-info">
+              <h3>Prompt Engineering – Fundamental Level</h3>
+              <div class="cert-badge active" role="status">Active</div>
+              <p class="cert-issuer">Credly</p>
+              <p class="cert-date">
+                <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                Issued Mar 2026 &bull; No Expiry
+              </p>
+            </div>
+            <i class="fas fa-external-link-alt cert-link-icon" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://www.credly.com/badges/90445d3a-24d2-4b77-b1a8-b0cd998f782e/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
+             aria-label="AWS Certified Solutions Architect Associate certification on Credly">
+            <div class="cert-icon"><i class="fab fa-aws" aria-hidden="true"></i></div>
+            <div class="cert-info">
+              <h3>AWS Certified Solutions Architect – Associate</h3>
+              <div class="cert-badge expired" role="status">Expired</div>
+              <p class="cert-issuer">Amazon Web Services (SAA-C02)</p>
+              <p class="cert-date">
+                <i class="fas fa-calendar-times" aria-hidden="true"></i>
+                Issued Jul 2021 &bull; Expired Jul 2024
+              </p>
+            </div>
+            <i class="fas fa-external-link-alt cert-link-icon" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education" aria-labelledby="edu-heading">
+      <div class="container">
+        <h2 class="section-title" id="edu-heading">Edu<span>cation</span></h2>
+        <article class="edu-card" data-aos>
+          <div class="edu-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+          <div class="edu-info">
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="edu-institution">Panimalar Institute of Technology, Anna University</p>
+            <p class="edu-location">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              Chennai, India
+            </p>
+            <p class="edu-year">Graduated 2018</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section-title" id="contact-heading">Get in <span>Touch</span></h2>
+        <p class="contact-intro">
+          I'm always open to interesting conversations, collaboration, or new opportunities.
+          Feel free to reach out through any of the channels below.
+        </p>
+        <div class="contact-links" role="list" aria-label="Contact links">
+
+          <a href="https://www.linkedin.com/in/Harishankar97" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+            <small>linkedin.com/in/Harishankar97</small>
+          </a>
+
+          <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+            <small>Harishankar-GitHub</small>
+          </a>
+
+          <a href="https://harishankar97.medium.com/" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+            <i class="fab fa-medium" aria-hidden="true"></i>
+            <span>Medium</span>
+            <small>harishankar97.medium.com</small>
+          </a>
+
+          <a href="https://stackoverflow.com/users/17200622/harishankar-bhat-ramachandra" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+            <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+            <span>Stack Overflow</span>
+            <small>harishankar-bhat-ramachandra</small>
+          </a>
+
+          <a href="https://www.credly.com/users/harishankar97/badges" target="_blank" rel="noopener noreferrer" class="contact-card" role="listitem">
+            <i class="fas fa-certificate" aria-hidden="true"></i>
+            <span>Credly</span>
+            <small>harishankar97</small>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Harishankar Bhat Ramachandra</strong></p>
+      <p class="footer-sub">&copy; <span id="year"></span> &middot; All rights reserved</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
