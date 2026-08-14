@@ -171,7 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       isDeleting ? charIndex-- : charIndex++;
 
-      let delay = isDeleting ? 55 : 95;
+      const jitter = Math.floor(Math.random() * 30) - 15; // ±15ms
+      let delay = isDeleting ? 55 + jitter : 95 + jitter;
 
       if (!isDeleting && charIndex === current.length) {
         delay = 1800;
@@ -199,46 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Total Experience Calculator ────────────────────────── */
   (function renderExperience() {
-    /**
-     * Career intervals: [startYear, startMonth (0-indexed), endYear | null, endMonth | null]
-     * Overlapping periods are merged to avoid double-counting.
-     */
-    const roles = [
-      [2018,  7, 2018, 11], // Infosys Trainee:   Aug 2018 – Dec 2018
-      [2019,  0, 2020,  8], // Infosys SE:        Jan 2019 – Sep 2020
-      [2020,  9, 2021,  0], // Infosys Senior SE: Oct 2020 – Jan 2021
-      [2021,  0, 2023,  7], // Philips:           Jan 2021 – Aug 2023
-      [2023,  7, 2024,  6], // Epsilon:           Aug 2023 – Jul 2024
-      [2024,  6, null, null], // Ericsson:         Jul 2024 – Present
-    ];
+    const now    = new Date();
+    const nowY   = now.getFullYear();
+    const nowM   = now.getMonth() + 1; // 1-indexed
 
-    const now = Date.now();
+    // Simple: from career start (Aug 2018) to present month inclusive
+    const startY = 2018, startM = 8;
+    const totalMonths = (nowY * 12 + nowM) - (startY * 12 + startM);
 
-    // Build intervals in ms
-    const intervals = roles.map(([sy, sm, ey, em]) => [
-      new Date(sy, sm, 1).getTime(),
-      ey === null ? now : new Date(ey, em, 1).getTime(),
-    ]);
-
-    // Sort by start time
-    intervals.sort((a, b) => a[0] - b[0]);
-
-    // Merge overlapping intervals
-    const merged = intervals.reduce((acc, [start, end]) => {
-      if (acc.length && start <= acc[acc.length - 1][1]) {
-        acc[acc.length - 1][1] = Math.max(acc[acc.length - 1][1], end);
-      } else {
-        acc.push([start, end]);
-      }
-      return acc;
-    }, []);
-
-    // Total months
-    const MS_PER_MONTH  = 1000 * 60 * 60 * 24 * 30.4375;
-    const totalMs       = merged.reduce((sum, [s, e]) => sum + (e - s), 0);
-    const totalMonths   = Math.floor(totalMs / MS_PER_MONTH);
-    const years         = Math.floor(totalMonths / 12);
-    const months        = totalMonths % 12;
+    const years  = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
 
     const label = months === 0
       ? `${years} yrs`
@@ -246,6 +217,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const el = document.getElementById('experience-total');
     if (el) el.textContent = `⏱ ${label}`;
+  })();
+
+  /* ── Role Duration Labels ────────────────────────────────── */
+  (function renderDurations() {
+    function calcDuration(start, end) {
+      const [sy, sm] = start.split('-').map(Number);
+      const now = new Date();
+      const ey  = end === 'present' ? now.getFullYear() : Number(end.split('-')[0]);
+      const em  = end === 'present' ? now.getMonth() + 1 : Number(end.split('-')[1]) + 1;
+
+      const totalMonths = (ey * 12 + em) - (sy * 12 + sm);
+      const years  = Math.floor(totalMonths / 12);
+      const months = totalMonths % 12;
+
+      const parts = [];
+      if (years  > 0) parts.push(`${years} ${years  === 1 ? 'yr'    : 'yrs'}`);
+      if (months > 0) parts.push(`${months} ${months === 1 ? 'month' : 'months'}`);
+      return parts.length ? parts.join(' ') : '< 1 month';
+    }
+
+    document.querySelectorAll('.role-duration').forEach(el => {
+      const start = el.dataset.start;
+      const end   = el.dataset.end;
+      if (start && end) el.textContent = calcDuration(start, end);
+    });
   })();
 
   /* ── Footer Year ─────────────────────────────────────────── */

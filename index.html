@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Harishankar Bhat Ramachandra — Software Engineer with 7+ years of experience in Backend Systems, Microservices, and AI Tools. Based in Ireland." />
+  <meta name="description" content="Harishankar Bhat Ramachandra — Software Engineer with 8+ years of experience in Backend Systems, Microservices, and AI Tools. Based in Ireland." />
   <meta name="author" content="Harishankar Bhat Ramachandra" />
   <meta name="keywords" content="Software Engineer, Backend, Microservices, AI, Java, Python, Spring Boot, Ireland" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Harishankar Bhat Ramachandra | Software Engineer" />
-  <meta property="og:description" content="Software Engineer with 7+ years of experience in Backend Systems, Microservices, and AI Tools." />
+  <meta property="og:description" content="Software Engineer with 8+ years of experience in Backend Systems, Microservices, and AI Tools." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="profile_picture.jpg" />
+  <meta property="og:image" content="https://Harishankar-GitHub.github.io/profile_picture.jpg" />
+
+  <meta name="theme-color" content="#0a0d14" />
+  <meta name="theme-color" content="#f5f7ff" media="(prefers-color-scheme: light)" />
 
   <title>Harishankar Bhat Ramachandra | Software Engineer</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://Harishankar-GitHub.github.io/" />
+
+  <!-- Preload above-fold image -->
+  <link rel="preload" as="image" href="profile_picture.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.ico" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,6 +52,7 @@
         <li role="listitem"><a href="#about">About</a></li>
         <li role="listitem"><a href="#experience">Experience</a></li>
         <li role="listitem"><a href="#skills">Skills</a></li>
+        <li role="listitem"><a href="#projects">Projects</a></li>
         <li role="listitem"><a href="#certifications">Certifications</a></li>
         <li role="listitem"><a href="#education">Education</a></li>
         <li role="listitem"><a href="#contact">Contact</a></li>
@@ -70,7 +84,7 @@
           <span>Ireland</span>
         </p>
         <p class="hero-summary">
-          Software Engineer with 7+ years of experience building scalable backend systems,
+          Software Engineer with 8+ years of experience building scalable backend systems,
           microservices, and AI-powered tools. Passionate about clean architecture and
           intelligent automation.
         </p>
@@ -125,7 +139,7 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I'm a Software Engineer with over 7 years of experience designing and delivering
+              I'm a Software Engineer with over 8 years of experience designing and delivering
               robust backend systems, RESTful APIs, and microservice architectures. Currently
               based in <strong>Ireland</strong>, I work at <strong>Ericsson</strong> where I
               develop rApps on Ericsson's EIC (Ericsson Intelligent Controller) Platform.
@@ -144,7 +158,7 @@
             </p>
             <div class="about-stats" role="list" aria-label="Career statistics">
               <div class="stat" role="listitem">
-                <span class="stat-number" aria-label="7 plus years">7+</span>
+                <span class="stat-number" aria-label="8 plus years">8+</span>
                 <span class="stat-label">Years Experience</span>
               </div>
               <div class="stat" role="listitem">
@@ -179,6 +193,13 @@
       </div>
     </section>
 
+    <!-- Divider -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--bg-alt)"/>
+      </svg>
+    </div>
+
     <!-- ===== EXPERIENCE ===== -->
     <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
       <div class="container">
@@ -196,7 +217,12 @@
                   <h3 class="job-title">Software Engineer</h3>
                   <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Ericsson &mdash; Ireland</p>
                 </div>
-                <time class="timeline-date" datetime="2024-07">Jul 2024 – Present</time>
+              <div class="date-wrap">
+                <time class="timeline-date current-role" datetime="2024-07">
+                  <span class="live-dot" aria-hidden="true"></span>Jul 2024 – Present
+                </time>
+                <span class="role-duration" data-start="2024-07" data-end="present"></span>
+              </div>
               </header>
               <p class="team-name">Ericsson Intelligent Automation Platform (EIAP)</p>
               <ul class="job-tags" aria-label="Technologies used">
@@ -215,7 +241,10 @@
                   <h3 class="job-title">Senior Software Engineer</h3>
                   <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Epsilon &mdash; India</p>
                 </div>
+              <div class="date-wrap">
                 <time class="timeline-date" datetime="2023-08">Aug 2023 – Jul 2024</time>
+                <span class="role-duration" data-start="2023-08" data-end="2024-07"></span>
+              </div>
               </header>
               <p class="team-name">Product Engineering — Connect Platform</p>
               <ul class="job-tags" aria-label="Technologies used">
@@ -232,7 +261,10 @@
                   <h3 class="job-title">Software Engineer II</h3>
                   <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Philips &mdash; India</p>
                 </div>
+              <div class="date-wrap">
                 <time class="timeline-date" datetime="2021-01">Jan 2021 – Aug 2023</time>
+                <span class="role-duration" data-start="2021-01" data-end="2023-08"></span>
+              </div>
               </header>
               <p class="team-name">HealthSuite Platform (HSP)</p>
               <ul class="job-tags" aria-label="Technologies used">
@@ -248,14 +280,20 @@
                 <div>
                   <h3 class="job-title">Infosys &mdash; India</h3>
                 </div>
+              <div class="date-wrap">
                 <time class="timeline-date" datetime="2018-08">Aug 2018 – Jan 2021</time>
+                <span class="role-duration" data-start="2018-08" data-end="2021-01"></span>
+              </div>
               </header>
               <div class="sub-roles">
 
                 <div class="sub-role">
                   <div class="sub-role-header">
-                    <span class="sub-role-title">Senior Systems Engineer</span>
+                  <span class="sub-role-title">Senior Systems Engineer</span>
+                  <div class="date-wrap">
                     <time class="timeline-date" datetime="2020-10">Oct 2020 – Jan 2021</time>
+                    <span class="role-duration" data-start="2020-10" data-end="2021-01"></span>
+                  </div>
                   </div>
                   <p class="team-name">Verizon Enterprise Payments Systems (Verizon)</p>
                   <ul class="job-tags" aria-label="Technologies used">
@@ -265,8 +303,11 @@
 
                 <div class="sub-role">
                   <div class="sub-role-header">
-                    <span class="sub-role-title">Systems Engineer</span>
+                  <span class="sub-role-title">Systems Engineer</span>
+                  <div class="date-wrap">
                     <time class="timeline-date" datetime="2019-01">Jan 2019 – Sep 2020</time>
+                    <span class="role-duration" data-start="2019-01" data-end="2020-09"></span>
+                  </div>
                   </div>
                   <p class="team-name">Enterprise Payments Systems (AT&amp;T) &bull; Verizon Enterprise Payments Systems (Verizon)</p>
                   <ul class="job-tags" aria-label="Technologies used">
@@ -276,8 +317,11 @@
 
                 <div class="sub-role">
                   <div class="sub-role-header">
-                    <span class="sub-role-title">Systems Engineer Trainee</span>
+                  <span class="sub-role-title">Systems Engineer Trainee</span>
+                  <div class="date-wrap">
                     <time class="timeline-date" datetime="2018-08">Aug 2018 – Dec 2018</time>
+                    <span class="role-duration" data-start="2018-08" data-end="2018-12"></span>
+                  </div>
                   </div>
                   <ul class="job-tags" aria-label="Technologies used">
                     <li>Java</li><li>Spring</li><li>Hibernate</li><li>Training</li>
@@ -291,6 +335,13 @@
         </ol>
       </div>
     </section>
+
+    <!-- Divider -->
+    <div class="section-divider alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
 
     <!-- ===== SKILLS ===== -->
     <section class="section" id="skills" aria-labelledby="skills-heading">
@@ -395,6 +446,115 @@
       </div>
     </section>
 
+    <!-- Divider -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--bg-alt)"/>
+      </svg>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title" id="projects-heading">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+
+          <article class="project-card" data-aos>
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Harishankar-GitHub/GitHub-Code-Review-Agent" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">GitHub Code Review AI Agent</h3>
+            <p class="project-desc">
+              An AI-powered GitHub PR reviewer built with Kiro CLI. Fetches PR diffs via the
+              GitHub REST API, builds a structured review prompt, and pipes it to Kiro CLI to
+              generate detailed feedback on code quality, security, performance, and best
+              practices. Supports CLI, MCP Server, and CI/CD modes.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li>Python</li>
+              <li>Kiro CLI</li>
+              <li>MCP Server</li>
+              <li>GitHub REST API</li>
+              <li>Prompt Engineering</li>
+              <li>Agentic AI</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-aos>
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fab fa-apple" aria-hidden="true"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Harishankar-GitHub/Apple-Products-Global-Price-Tracker" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://harishankar-github.github.io/Apple-Products-Global-Price-Tracker/" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Apple Products Global Price Tracker</h3>
+            <p class="project-desc">
+              Compare official Apple prices across 50+ country storefronts in real time.
+              All 50 country requests fire simultaneously via async aiohttp, with results
+              streaming live to the browser via Server-Sent Events (SSE). Prices are converted
+              to USD using live exchange rates and ranked cheapest-first.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>aiohttp</li>
+              <li>SSE</li>
+              <li>asyncio</li>
+              <li>GitHub Pages</li>
+              <li>Render</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-aos>
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" aria-label="View all projects on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">More on GitHub</h3>
+            <p class="project-desc">
+              Explore more projects on GitHub — from Spring Boot microservices and FastAPI
+              services to AI integrations, automation scripts, and hands-on experiments
+              across Java and Python.
+            </p>
+            <ul class="project-tags" aria-label="Technologies used">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>AI</li>
+            </ul>
+          </article>
+
+        </div>
+        <div class="projects-cta">
+          <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fab fa-github" aria-hidden="true"></i> View All on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+
     <!-- ===== CERTIFICATIONS ===== -->
     <section class="section section-alt" id="certifications" aria-labelledby="cert-heading">
       <div class="container">
@@ -453,6 +613,13 @@
       </div>
     </section>
 
+    <!-- Divider -->
+    <div class="section-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="var(--bg-alt)"/>
+      </svg>
+    </div>
+
     <!-- ===== EDUCATION ===== -->
     <section class="section" id="education" aria-labelledby="edu-heading">
       <div class="container">
@@ -471,6 +638,13 @@
         </article>
       </div>
     </section>
+
+    <!-- Divider -->
+    <div class="section-divider alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
 
     <!-- ===== CONTACT ===== -->
     <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
