@@ -679,8 +679,6 @@ strong { color: var(--text); font-weight: 600; }
 .timeline-item {
   position: relative;
   margin-bottom: 32px;
-  opacity: 0;
-  transform: translateY(28px);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
 .timeline-item.visible { opacity: 1; transform: translateY(0); }
@@ -850,8 +848,6 @@ strong { color: var(--text); font-weight: 600; }
   border-radius: var(--radius);
   padding: 24px;
   transition: all var(--transition);
-  opacity: 0;
-  transform: translateY(20px);
   position: relative;
   overflow: hidden;
 }
@@ -938,8 +934,6 @@ strong { color: var(--text); font-weight: 600; }
   flex-direction: column;
   gap: 14px;
   transition: all var(--transition);
-  opacity: 0;
-  transform: translateY(24px);
   position: relative;
   overflow: hidden;
 }
@@ -1049,8 +1043,6 @@ strong { color: var(--text); font-weight: 600; }
   gap: 16px;
   position: relative;
   transition: all var(--transition);
-  opacity: 0;
-  transform: translateY(20px);
   text-decoration: none;
   overflow: hidden;
 }
@@ -1149,8 +1141,6 @@ strong { color: var(--text); font-weight: 600; }
   gap: 28px;
   max-width: 640px;
   transition: all var(--transition);
-  opacity: 0;
-  transform: translateY(20px);
   position: relative;
   overflow: hidden;
 }
@@ -1317,9 +1307,29 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 /* ── Scroll Animations ─────────────────────────────────────── */
-[data-aos] {
+/* Start hidden only when JS has loaded (js-loaded class added by script) */
+.js-loaded [data-aos],
+.js-loaded .timeline-item,
+.js-loaded .skill-category,
+.js-loaded .cert-card,
+.js-loaded .edu-card,
+.js-loaded .project-card {
   opacity: 0;
   transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.js-loaded [data-aos].visible,
+.js-loaded .timeline-item.visible,
+.js-loaded .skill-category.visible,
+.js-loaded .cert-card.visible,
+.js-loaded .edu-card.visible,
+.js-loaded .project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Legacy selectors kept for non-js-loaded fallback */
+[data-aos] {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 [data-aos].visible {

@@ -7,6 +7,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Mark document as JS-loaded so CSS animations are safe to apply
+  document.documentElement.classList.add('js-loaded');
+
   /* ── Helpers ─────────────────────────────────────────────── */
 
   /**
