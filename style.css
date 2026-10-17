@@ -44,6 +44,7 @@
   --accent-glow-2: rgba(124, 111, 255, 0.35);
   --btn-from:      #6457f0; /* gradient start that keeps white button text at 4.5:1+ */
   --menu-bg:       rgba(10, 13, 20, 0.97);
+  --current-border: rgba(124, 111, 255, 0.55);
 
   /* Text */
   --text:          #e8edf5;
@@ -92,6 +93,7 @@
   --accent-glow-2: rgba(90, 79, 227, 0.2);
   --btn-from:      #5a4fe3;
   --menu-bg:       rgba(245, 247, 255, 0.97);
+  --current-border: rgba(90, 79, 227, 0.45);
   --text:          #111827;
   --text-muted:    #4b5563;
   --text-dim:      #6b7280;
@@ -727,8 +729,10 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 .timeline {
+  --timeline-pad: 36px;
+  --timeline-line-x: 9px; /* centre of the vertical line (left: 8px, width: 2px) */
   position: relative;
-  padding-left: 36px;
+  padding-left: var(--timeline-pad);
 }
 .timeline::before {
   content: '';
@@ -746,7 +750,8 @@ strong { color: var(--text); font-weight: 600; }
 }
 .timeline-dot {
   position: absolute;
-  left: -32px;
+  /* centre the dot on the vertical line at any padding */
+  left: calc(var(--timeline-line-x) - var(--timeline-pad) - 7px);
   top: 20px;
   width: 14px;
   height: 14px;
@@ -785,6 +790,32 @@ strong { color: var(--text); font-weight: 600; }
   transform: translateX(4px);
 }
 .timeline-content:hover::before { opacity: 1; }
+
+/* Current role: stands out from past roles at a glance */
+.timeline-item.is-current .timeline-content {
+  border-color: var(--current-border);
+  background:
+    linear-gradient(135deg, var(--accent-glow) 0%, transparent 60%),
+    var(--surface);
+  box-shadow: var(--shadow-accent);
+}
+.timeline-item.is-current .timeline-content::before { opacity: 1; height: 3px; }
+.timeline-item.is-current .timeline-dot {
+  left: calc(var(--timeline-line-x) - var(--timeline-pad) - 9px);
+  top: 18px;
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 0 3px var(--accent), 0 0 20px var(--accent-glow-2);
+}
+.current-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: var(--accent-2);
+  margin-bottom: 6px;
+}
 .timeline-header {
   display: flex;
   justify-content: space-between;
@@ -1480,7 +1511,7 @@ strong { color: var(--text); font-weight: 600; }
   .section { padding-block: 76px; }
   .about-highlights { grid-template-columns: 1fr; }
   .about-stats { gap: 24px; }
-  .timeline { padding-left: 26px; }
+  .timeline { --timeline-pad: 26px; }
   .timeline-header { flex-direction: column; gap: 8px; }
   .timeline-date { align-self: flex-start; }
   /* Date chip with the duration directly underneath, both left-aligned */
