@@ -6,11 +6,25 @@
   <title>404 — Page Not Found | Harishankar Bhat Ramachandra</title>
   <meta name="theme-color" content="#0a0d14" />
   <meta name="robots" content="noindex" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Absolute paths: this page is served for any missing URL, at any depth -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url('/fonts/inter-latin-var.woff2') format('woff2');
+      font-weight: 400 800;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Fira Code';
+      src: url('/fonts/fira-code-latin-var.woff2') format('woff2');
+      font-weight: 400 500;
+      font-display: swap;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -52,6 +66,11 @@
       text-align: center;
       max-width: 520px;
       animation: fade-up 0.6s ease both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .container { animation: none; }
+      .btn { transition: none; }
     }
 
     @keyframes fade-up {
@@ -107,7 +126,7 @@
       border: 2px solid transparent;
     }
     .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #4f46e5);
+      background: linear-gradient(135deg, #6457f0, #4f46e5);
       color: #fff;
       box-shadow: 0 4px 16px rgba(124,111,255,0.35);
     }
@@ -138,7 +157,7 @@
 </head>
 <body>
   <div class="glow" aria-hidden="true"></div>
-  <div class="container" role="main">
+  <main class="container">
     <p class="code" aria-label="Error 404">404</p>
     <div class="divider" aria-hidden="true"></div>
     <h1 class="title">Page Not Found</h1>
@@ -154,6 +173,6 @@
         Get in Touch
       </a>
     </div>
-  </div>
+  </main>
 </body>
 </html>
