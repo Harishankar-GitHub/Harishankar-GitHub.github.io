@@ -800,13 +800,33 @@ strong { color: var(--text); font-weight: 600; }
   letter-spacing: -0.2px;
 }
 .company {
-  font-size: 0.85rem;
-  color: var(--accent);
   display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  margin: 0;
 }
+/* Company names: bold, bright accent, close to the job title in size,
+   so every employer stands out when scanning the timeline. */
+.company-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  color: var(--accent-2);
+}
+.company-location {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.company-location::before {
+  content: '·';
+  content: '·' / '';
+  margin-right: 8px;
+  color: var(--text-dim);
+}
+/* Infosys card: the company is the heading itself */
+.job-title.company .company-name { font-size: 1.05rem; }
 .timeline-date {
   font-size: 0.775rem;
   color: var(--text-muted);
@@ -1463,6 +1483,12 @@ strong { color: var(--text); font-weight: 600; }
   .timeline { padding-left: 26px; }
   .timeline-header { flex-direction: column; gap: 8px; }
   .timeline-date { align-self: flex-start; }
+  /* Date chip with the duration directly underneath, both left-aligned */
+  .date-wrap { align-items: flex-start; }
+  .role-duration {
+    text-align: left;
+    padding-left: 13px; /* lines up with the text inside the date chip */
+  }
   .section-title-row { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 
