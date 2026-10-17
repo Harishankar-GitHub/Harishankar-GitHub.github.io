@@ -49,7 +49,9 @@
   <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/fira-code-latin-var.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Bump ?v= whenever style.css or script.js changes, so returning visitors
+       never get a new page with an old cached stylesheet or script -->
+  <link rel="stylesheet" href="style.css?v=2026-10-17" />
 
   <!-- Structured data for search engines -->
   <script type="application/ld+json">
@@ -78,7 +80,7 @@
 
   <!-- Icons: Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com
        License - https://fontawesome.com/license/free (Icons: CC BY 4.0) Copyright 2023 Fonticons, Inc. -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-apple" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></symbol>
     <symbol id="i-arrow-up" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></symbol>
     <symbol id="i-arrow-up-right-from-square" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></symbol>
@@ -128,8 +130,8 @@
         <li role="listitem"><a href="#contact">Contact</a></li>
       </ul>
       <button class="theme-toggle" id="theme-toggle" aria-label="Switch colour theme" type="button">
-        <svg class="icon icon-sun" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-sun"/></svg>
-        <svg class="icon icon-moon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-moon"/></svg>
       </button>
       <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links" type="button">
         <span aria-hidden="true"></span>
@@ -152,7 +154,7 @@
           <span class="typed-text" id="typed-text" aria-hidden="true">Software Engineer</span><span class="cursor" aria-hidden="true">|</span>
         </p>
         <p class="hero-location">
-          <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-location-dot"/></svg>
+          <svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-location-dot"/></svg>
           <span>Ireland</span>
         </p>
         <p class="hero-summary">
@@ -162,27 +164,27 @@
         </p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">
-            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-paper-plane"/></svg> Get in Touch
+            <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-paper-plane"/></svg> Get in Touch
           </a>
           <a href="#experience" class="btn btn-outline">
-            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-briefcase"/></svg> View Experience
+            <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-briefcase"/></svg> View Experience
           </a>
         </div>
         <ul class="hero-socials" role="list" aria-label="Social links">
           <li><a href="https://www.linkedin.com/in/Harishankar97" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-            <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg>
           </a></li>
           <li><a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-            <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg>
+            <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
           </a></li>
           <li><a href="https://harishankar97.medium.com/" target="_blank" rel="noopener noreferrer" aria-label="Medium blog">
-            <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-medium"/></svg>
+            <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-medium"/></svg>
           </a></li>
           <li><a href="https://stackoverflow.com/users/17200622/harishankar-bhat-ramachandra" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile">
-            <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-stack-overflow"/></svg>
+            <svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-stack-overflow"/></svg>
           </a></li>
           <li><a href="https://www.credly.com/users/harishankar97/badges" target="_blank" rel="noopener noreferrer" aria-label="Credly badges">
-            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-certificate"/></svg>
+            <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-certificate"/></svg>
           </a></li>
         </ul>
       </div>
@@ -205,7 +207,7 @@
         </div>
       </div>
       <a href="#about" class="scroll-down" aria-label="Scroll to About section">
-        <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+        <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-chevron-down"/></svg>
       </a>
     </section>
 
@@ -246,22 +248,22 @@
           </div>
           <div class="about-highlights">
             <article class="highlight-card">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-server"/></svg>
+              <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-server"/></svg>
               <h3>Backend Engineering</h3>
               <p>Spring Boot, REST APIs, Microservices, JPA/Hibernate, Spring Security, FastAPI</p>
             </article>
             <article class="highlight-card">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-robot"/></svg>
+              <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-robot"/></svg>
               <h3>AI &amp; Agents</h3>
               <p>LLM Integrations, AI Agent Development, Prompt Engineering, Kiro IDE, Kiro CLI, Amazon Q</p>
             </article>
             <article class="highlight-card">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-cloud"/></svg>
+              <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-cloud"/></svg>
               <h3>Infrastructure</h3>
               <p>Docker, Kubernetes, Jenkins, GitHub CI/CD</p>
             </article>
             <article class="highlight-card">
-              <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-database"/></svg>
+              <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-database"/></svg>
               <h3>Data &amp; Storage</h3>
               <p>Oracle SQL, PostgreSQL, Redis — design, optimisation, and integration</p>
             </article>
@@ -286,7 +288,7 @@
               <header class="timeline-header">
                 <div>
                   <h3 class="job-title">Software Engineer</h3>
-                  <p class="company"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-building"/></svg> Ericsson &mdash; Ireland</p>
+                  <p class="company"><svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-building"/></svg> Ericsson &mdash; Ireland</p>
                 </div>
               <div class="date-wrap">
                 <time class="timeline-date current-role" datetime="2024-07">
@@ -310,7 +312,7 @@
               <header class="timeline-header">
                 <div>
                   <h3 class="job-title">Senior Software Engineer</h3>
-                  <p class="company"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-building"/></svg> Epsilon &mdash; India</p>
+                  <p class="company"><svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-building"/></svg> Epsilon &mdash; India</p>
                 </div>
               <div class="date-wrap">
                 <time class="timeline-date" datetime="2023-08">Aug 2023 – Jul 2024</time>
@@ -330,7 +332,7 @@
               <header class="timeline-header">
                 <div>
                   <h3 class="job-title">Software Engineer II</h3>
-                  <p class="company"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-building"/></svg> Philips &mdash; India</p>
+                  <p class="company"><svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-building"/></svg> Philips &mdash; India</p>
                 </div>
               <div class="date-wrap">
                 <time class="timeline-date" datetime="2021-01">Jan 2021 – Aug 2023</time>
@@ -416,7 +418,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-code"/></svg>
+              <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-code"/></svg>
               <h3>Languages</h3>
             </div>
             <ul class="skill-tags" aria-label="Programming languages">
@@ -427,7 +429,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 576 512" aria-hidden="true"><use href="#i-layer-group"/></svg>
+              <svg class="icon" viewBox="0 0 576 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-layer-group"/></svg>
               <h3>Backend &amp; Frameworks</h3>
             </div>
             <ul class="skill-tags" aria-label="Backend frameworks">
@@ -443,7 +445,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-robot"/></svg>
+              <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-robot"/></svg>
               <h3>AI &amp; Tooling</h3>
             </div>
             <ul class="skill-tags" aria-label="AI tools and technologies">
@@ -458,7 +460,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-cloud"/></svg>
+              <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-cloud"/></svg>
               <h3>Infrastructure &amp; DevOps</h3>
             </div>
             <ul class="skill-tags" aria-label="Infrastructure tools">
@@ -473,7 +475,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-database"/></svg>
+              <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-database"/></svg>
               <h3>Databases</h3>
             </div>
             <ul class="skill-tags" aria-label="Databases">
@@ -485,7 +487,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-right-left"/></svg>
+              <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-right-left"/></svg>
               <h3>Messaging</h3>
             </div>
             <ul class="skill-tags" aria-label="Messaging systems">
@@ -496,7 +498,7 @@
 
           <article class="skill-category" data-aos>
             <div class="skill-category-header">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-vial"/></svg>
+              <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-vial"/></svg>
               <h3>Unit Testing</h3>
             </div>
             <ul class="skill-tags" aria-label="Testing tools">
@@ -520,10 +522,10 @@
 
           <article class="project-card" data-aos>
             <div class="project-card-header">
-              <div class="project-icon"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-robot"/></svg></div>
+              <div class="project-icon"><svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-robot"/></svg></div>
               <div class="project-links">
                 <a href="https://github.com/Harishankar-GitHub/GitHub-Code-Review-Agent" target="_blank" rel="noopener noreferrer" aria-label="GitHub Code Review AI Agent source code on GitHub">
-                  <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg>
+                  <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
                 </a>
               </div>
             </div>
@@ -546,13 +548,13 @@
 
           <article class="project-card" data-aos>
             <div class="project-card-header">
-              <div class="project-icon"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-apple"/></svg></div>
+              <div class="project-icon"><svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-apple"/></svg></div>
               <div class="project-links">
                 <a href="https://github.com/Harishankar-GitHub/Apple-Products-Global-Price-Tracker" target="_blank" rel="noopener noreferrer" aria-label="Apple Products Global Price Tracker source code on GitHub">
-                  <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg>
+                  <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
                 </a>
                 <a href="https://harishankar-github.github.io/Apple-Products-Global-Price-Tracker/" target="_blank" rel="noopener noreferrer" aria-label="Apple Products Global Price Tracker live demo">
-                  <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
+                  <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
                 </a>
               </div>
             </div>
@@ -576,10 +578,10 @@
 
           <article class="project-card" data-aos>
             <div class="project-card-header">
-              <div class="project-icon"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-code-branch"/></svg></div>
+              <div class="project-icon"><svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-code-branch"/></svg></div>
               <div class="project-links">
                 <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" aria-label="View all projects on GitHub">
-                  <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg>
+                  <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
                 </a>
               </div>
             </div>
@@ -601,7 +603,7 @@
         </div>
         <div class="projects-cta">
           <a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-            <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg> View All on GitHub
+            <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg> View All on GitHub
           </a>
         </div>
       </div>
@@ -617,49 +619,49 @@
           <a href="https://www.credly.com/badges/eb4caf25-74e0-472e-973a-36a9d8884628/public_url"
              target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
              aria-label="Generative AI Driver's License certification on Credly">
-            <div class="cert-icon"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-brain"/></svg></div>
+            <div class="cert-icon"><svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-brain"/></svg></div>
             <div class="cert-info">
               <h3>Generative AI Driver's License</h3>
               <div class="cert-badge active">Active</div>
               <p class="cert-issuer">Credly</p>
               <p class="cert-date">
-                <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-calendar-check"/></svg>
+                <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-calendar-check"/></svg>
                 Issued Feb 2026 &bull; Expires Feb 2029
               </p>
             </div>
-            <svg class="icon cert-link-icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
+            <svg class="icon cert-link-icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
           </a>
 
           <a href="https://www.credly.com/badges/e6a75f1a-951b-45c1-adcd-6429e0c344c3/public_url"
              target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
              aria-label="Prompt Engineering Fundamental Level certification on Credly">
-            <div class="cert-icon"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-comment-dots"/></svg></div>
+            <div class="cert-icon"><svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-comment-dots"/></svg></div>
             <div class="cert-info">
               <h3>Prompt Engineering – Fundamental Level</h3>
               <div class="cert-badge active">Active</div>
               <p class="cert-issuer">Credly</p>
               <p class="cert-date">
-                <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-calendar-check"/></svg>
+                <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-calendar-check"/></svg>
                 Issued Mar 2026 &bull; No Expiry
               </p>
             </div>
-            <svg class="icon cert-link-icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
+            <svg class="icon cert-link-icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
           </a>
 
           <a href="https://www.credly.com/badges/90445d3a-24d2-4b77-b1a8-b0cd998f782e/public_url"
              target="_blank" rel="noopener noreferrer" class="cert-card" data-aos
              aria-label="AWS Certified Solutions Architect Associate certification on Credly">
-            <div class="cert-icon"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-aws"/></svg></div>
+            <div class="cert-icon"><svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-aws"/></svg></div>
             <div class="cert-info">
               <h3>AWS Certified Solutions Architect – Associate</h3>
               <div class="cert-badge expired">Expired</div>
               <p class="cert-issuer">Amazon Web Services (SAA-C02)</p>
               <p class="cert-date">
-                <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-calendar-xmark"/></svg>
+                <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-calendar-xmark"/></svg>
                 Issued Jul 2021 &bull; Expired Jul 2024
               </p>
             </div>
-            <svg class="icon cert-link-icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
+            <svg class="icon cert-link-icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right-from-square"/></svg>
           </a>
 
         </div>
@@ -672,12 +674,12 @@
       <div class="container">
         <h2 class="section-title" id="edu-heading">Edu<span>cation</span></h2>
         <article class="edu-card" data-aos>
-          <div class="edu-icon"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-graduation-cap"/></svg></div>
+          <div class="edu-icon"><svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-graduation-cap"/></svg></div>
           <div class="edu-info">
             <h3>B.E. Computer Science and Engineering</h3>
             <p class="edu-institution">Panimalar Institute of Technology, Anna University</p>
             <p class="edu-location">
-              <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-location-dot"/></svg>
+              <svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-location-dot"/></svg>
               Chennai, India
             </p>
             <p class="edu-year">Graduated 2018</p>
@@ -698,31 +700,31 @@
         <ul class="contact-links" role="list" aria-label="Contact links">
 
           <li><a href="https://www.linkedin.com/in/Harishankar97" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            <svg class="icon" viewBox="0 0 448 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg>
             <span>LinkedIn</span>
             <small>linkedin.com/in/Harishankar97</small>
           </a></li>
 
           <li><a href="https://github.com/Harishankar-GitHub" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <svg class="icon" viewBox="0 0 496 512" aria-hidden="true"><use href="#i-github"/></svg>
+            <svg class="icon" viewBox="0 0 496 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-github"/></svg>
             <span>GitHub</span>
             <small>Harishankar-GitHub</small>
           </a></li>
 
           <li><a href="https://harishankar97.medium.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <svg class="icon" viewBox="0 0 640 512" aria-hidden="true"><use href="#i-medium"/></svg>
+            <svg class="icon" viewBox="0 0 640 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-medium"/></svg>
             <span>Medium</span>
             <small>harishankar97.medium.com</small>
           </a></li>
 
           <li><a href="https://stackoverflow.com/users/17200622/harishankar-bhat-ramachandra" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-stack-overflow"/></svg>
+            <svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-stack-overflow"/></svg>
             <span>Stack Overflow</span>
             <small>harishankar-bhat-ramachandra</small>
           </a></li>
 
           <li><a href="https://www.credly.com/users/harishankar97/badges" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-certificate"/></svg>
+            <svg class="icon" viewBox="0 0 512 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-certificate"/></svg>
             <span>Credly</span>
             <small>harishankar97</small>
           </a></li>
@@ -742,9 +744,9 @@
   </footer>
 
   <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button">
-    <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+    <svg class="icon" viewBox="0 0 384 512" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up"/></svg>
   </button>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2026-10-17"></script>
 </body>
 </html>
